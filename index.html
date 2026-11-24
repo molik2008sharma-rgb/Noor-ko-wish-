@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best of luck for your exams, Kaur Arshnoor ✨</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(145deg, #0b1a2e 0%, #1a2f4e 100%);
+            padding: 1.5rem;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        #flower-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            overflow: hidden;
+        }
+
+        .flower {
+            position: absolute;
+            bottom: -60px;
+            font-size: 2rem;
+            animation: floatUp linear forwards;
+            filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.6));
+            will-change: transform, opacity;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(0deg) scale(0.8);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-110vh) rotate(360deg) scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        .wish-card {
+            max-width: 760px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-radius: 3.5rem;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5),
+                        0 0 0 1px rgba(255, 215, 0, 0.15) inset,
+                        0 0 40px rgba(255, 215, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.4s ease;
+            animation: float 6s infinite ease-in-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        .wish-card:hover {
+            transform: scale(1.01);
+            box-shadow: 0 40px 60px rgba(0, 0, 0, 0.6),
+                        0 0 0 2px rgba(255, 220, 100, 0.3) inset,
+                        0 0 60px rgba(255, 215, 0, 0.2);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+        }
+
+        .sparkle {
+            font-size: 3.5rem;
+            line-height: 1;
+            margin-bottom: 1rem;
+            display: inline-block;
+            filter: drop-shadow(0 0 10px gold);
+            animation: pulseGlow 3s infinite alternate;
+        }
+
+        @keyframes pulseGlow {
+            0% { opacity: 0.8; transform: scale(1); text-shadow: 0 0 10px gold; }
+            100% { opacity: 1; transform: scale(1.05); text-shadow: 0 0 30px #ffd966, 0 0 20px #ffb347; }
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 0.6rem;
+            background: linear-gradient(to right, #f9f3b0, #ffd966, #ffb347, #f9f3b0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .name-highlight {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #ffd966;
+            margin-bottom: 1.6rem;
+            letter-spacing: 1px;
+            text-shadow: 0 0 18px rgba(255, 215, 0, 0.45);
+        }
+
+        .exam-line {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #e8eef7;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+
+        .exam-line span {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 0.6rem 1.6rem;
+            border-radius: 100px;
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            font-size: 1.4rem;
+            color: #f9f3b0;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .message {
+            font-size: 1.25rem;
+            color: #cddbe9;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+            padding: 0 0.5rem;
+        }
+
+        .message strong {
+            color: #ffd966;
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .divider-line {
+            height: 2px;
+            width: 80px;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.6), transparent);
+            border-radius: 10px;
+        }
+
+        .divider-icon {
+            font-size: 1.8rem;
+            color: gold;
+            filter: drop-shadow(0 0 8px gold);
+        }
+
+        .quote-box {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 2rem;
+            padding: 1.8rem 1.8rem;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            margin-bottom: 2rem;
+            transition: background 0.3s ease;
+        }
+
+        .quote-box:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 215, 0, 0.45);
+        }
+
+        .quote-text {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #f1f7ff;
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 0.7rem;
+            letter-spacing: 0.2px;
+        }
+
+        .quote-author {
+            font-size: 1rem;
+            color: #a8bed6;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        .action-area {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #ffd966, #ffb347);
+            border: none;
+            padding: 0.9rem 2.3rem;
+            border-radius: 60px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1a2f4e;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            cursor: pointer;
+            box-shadow: 0 10px 25px -5px rgba(255, 180, 40, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+            transition: all 0.25s ease;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            flex: 0 1 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 30px -8px #ffb347, 0 0 0 2px rgba(255, 255, 255, 0.4) inset;
+            background: linear-gradient(135deg, #ffe28c, #ffbe5c);
+            color: #0b1a2e;
+        }
+
+        .btn:active {
+            transform: translateY(0px);
+            box-shadow: 0 8px 18px -5px #ffb347;
+        }
+
+        .btn:focus-visible {
+            outline: 3px solid #ffd966;
+            outline-offset: 3px;
+        }
+
+        .footer-note {
+            margin-top: 2.8rem;
+            font-size: 0.95rem;
+            color: #8aa0b8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            border-top: 1px solid rgba(255, 215, 0, 0.15);
+            padding-top: 1.8rem;
+        }
+
+        .footer-note span {
+            color: #ffb347;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 600px) {
+            .wish-card {
+                padding: 2.2rem 1.5rem;
+                border-radius: 2.5rem;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .name-highlight {
+                font-size: 1.3rem;
+            }
+
+            .exam-line {
+                font-size: 1.4rem;
+            }
+
+            .exam-line span {
+                font-size: 1.2rem;
+                padding: 0.4rem 1.2rem;
+            }
+
+            .message {
+                font-size: 1.1rem;
+            }
+
+            .quote-text {
+                font-size: 1.15rem;
+            }
+
+            .btn {
+                padding: 0.8rem 1.8rem;
+                font-size: 1rem;
+            }
+
+            .sparkle {
+                font-size: 2.8rem;
+            }
+
+            .flower {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .exam-line span {
+                font-size: 1rem;
+                padding: 0.3rem 0.9rem;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating flowers container -->
+    <div id="flower-container"></div>
+
+    <div class="wish-card">
+        <div class="sparkle">✨🎓✨</div>
+
+        <h1>Best of Luck<br>for your Exams</h1>
+
+        <p class="name-highlight">🌸 Kaur Arshnoor 🌸</p>
+
+        <div class="exam-line">
+            <span>📚 You've got this</span>
+            <span>💪 Stay strong</span>
+        </div>
+
+        <p class="message">
+            Every page you revise, every problem you solve — it’s all building toward this moment.
+            <strong>Believe in yourself</strong>, breathe, and let your hard work shine.
+        </p>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">🌟</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <div class="quote-box">
+            <p class="quote-text">“Bss acha achaa paper krke aana, aur sorry meri jagah se raat ko padh nhi payi.”</p>
+            <p class="quote-author">— Molik Sharma</p>
+        </div>
+
+        <div class="action-area">
+            <button class="btn" id="cheerBtn">
+                <span>💛</span> Send a little luck <span>💛</span>
+            </button>
+        </div>
+
+        <div id="feedbackMessage" style="margin-top: 1.2rem; font-size: 1.1rem; color: #ffd966; min-height: 2rem; transition: all 0.3s ease; font-weight: 500; letter-spacing: 0.3px;"></div>
+
+        <div class="footer-note">
+            <span>🍀</span> You are more prepared than you think, Arshnoor. <span>🍀</span>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            const cheerBtn = document.getElementById('cheerBtn');
+            const feedbackDiv = document.getElementById('feedbackMessage');
+            const flowerContainer = document.getElementById('flower-container');
+
+            const flowers = ['🌸', '🌺', '🌷', '🌹', '🌻', '💐', '🏵️', '🌼', '💮', '🪷'];
+
+            const messages = [
+                "🌟 You've absolutely got this, Arshnoor!",
+                "🍀 Luck is on your side today.",
+                "💪 All your effort will pay off.",
+                "✨ Breathe. Believe. Achieve.",
+                "📖 You know more than you realise.",
+                "🔥 Keep calm and ace it!",
+                "🏆 Success is just around the corner.",
+                "☀️ Shine bright — you're ready.",
+                "🧠 Trust your preparation.",
+                "🎯 Focus, breathe, conquer.",
+                "🌷 Kaur Arshnoor, you're unstoppable!",
+                "💫 Your hard work will speak for itself."
+            ];
+
+            let currentIndex = 0;
+            let fadeTimeout = null;
+            const originalBtnHTML = cheerBtn.innerHTML;
+
+            function createFlower() {
+                const flower = document.createElement('div');
+                flower.className = 'flower';
+                flower.textContent = flowers[Math.floor(Math.random() * flowers.length)];
+                flower.style.left = Math.random() * 100 + 'vw';
+                const size = 1.4 + Math.random() * 2.2;
+                flower.style.fontSize = size + 'rem';
+                const duration = 3 + Math.random() * 3;
+                flower.style.animationDuration = duration + 's';
+                flower.style.animationDelay = Math.random() * 0.3 + 's';
+                flowerContainer.appendChild(flower);
+                setTimeout(() => {
+                    flower.remove();
+                }, (duration + 0.3) * 1000);
+            }
+
+            function burstFlowers(count) {
+                for (let i = 0; i < count; i++) {
+                    setTimeout(() => {
+                        createFlower();
+                    }, i * 120);
+                }
+            }
+
+            cheerBtn.addEventListener('click', function() {
+                const message = messages[currentIndex];
+                currentIndex = (currentIndex + 1) % messages.length;
+
+                if (fadeTimeout) {
+                    clearTimeout(fadeTimeout);
+                }
+
+                feedbackDiv.style.opacity = '0';
+                feedbackDiv.textContent = message;
+
+                setTimeout(() => {
+                    feedbackDiv.style.opacity = '1';
+                }, 30);
+
+                fadeTimeout = setTimeout(() => {
+                    feedbackDiv.style.opacity = '0.7';
+                }, 2800);
+
+                burstFlowers(25);
+
+                cheerBtn.innerHTML = '<span>🎉</span> Luck sent! <span>🎉</span>';
+                setTimeout(() => {
+                    cheerBtn.innerHTML = originalBtnHTML;
+                }, 1500);
+            });
+
+            feedbackDiv.textContent = '';
+        })();
+    </script>
+</body>
+</html>
